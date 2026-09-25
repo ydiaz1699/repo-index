@@ -1,0 +1,14 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "repo-index: cargar índice y recordar sincronización al iniciar",
+      "trigger": "SessionStart",
+      "description": "At session start, load the repo-index skill so the assistant knows the ydiaz1699 ecosystem, and remind it to check for uncatalogued repos before creating repos or recommending tools.",
+      "action": {
+        "type": "agent",
+        "prompt": "Sesión iniciada en el repo-index (índice maestro del ecosistema ydiaz1699).\n\n1. Carga la skill .kiro/skills/repo-index/SKILL.md y lee INDEX.md para conocer los repos existentes.\n2. Ten presente sus reglas: ANTES de crear un repo nuevo, verifica si ya existe en INDEX.md; ANTES de recomendar una herramienta/MCP/patrón, busca en el ecosistema; ANTES de leer un repo entero, lee su destilado en repos/<repo>.md.\n3. NO ejecutes automáticamente el script de sincronización ni modifiques archivos. Solo, si el usuario va a crear un repo o pide catalogar/actualizar, sugiere ejecutar 'bash .kiro/skills/repo-index/scripts/sync-index.sh' para detectar repos sin catalizar, y sigue references/mantenimiento.md.\n4. Este recordatorio es informativo: no interrumpas la tarea del usuario ni pidas confirmaciones innecesarias."
+      }
+    }
+  ]
+}
