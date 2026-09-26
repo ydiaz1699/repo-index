@@ -35,6 +35,7 @@ Este repo es el **índice maestro**: consúltalo ANTES de actuar.
 | Instalar/usar una herramienta | `INDEX.md` + `mcp-catalog/INDICE.md` | Recomendar lo del ecosistema que aplique |
 | Construir un MCP | `mcp-catalog/INDICE.md` | Aplicar los patrones/buenas prácticas ya destilados |
 | Mejorar skills/contexto de agentes | `mcp-catalog/INDICE.md` (Prowler, Context_Engineering) | Recomendar el patrón catalogado |
+| Crear/ordenar un repo, hacer un mirror/fork, abrir a colaboradores | `Varios_tools/artefactos_proyecto/` (catálogo de archivos-artefacto: UPSTREAM.md, CONTRIBUTING.md, .env.example, CHANGELOG.md, ADR, SECURITY.md) | Añadir los artefactos que apliquen usando sus plantillas |
 
 ## Repos ancla del ecosistema (fuentes de verdad, NO duplicar aquí)
 
