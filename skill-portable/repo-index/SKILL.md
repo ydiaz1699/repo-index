@@ -41,7 +41,7 @@ verdad viva está en el repo `github.com/ydiaz1699/repo-index`; esta es su versi
 | Si el usuario menciona / pide... | Recomienda del ecosistema |
 |---|---|
 | Instalar/usar **n8n**, workflows | MCP **n8n-mcp** (crea workflows, ya montado en Kiro CLI) + repo **alexa_y_n8n** |
-| **Alarma / PIR / sensores** IoT | repo **wifi_PIR** (ESP8266 UDP + MQTT a HA) — NO empezar de cero |
+| **Alarma / PIR / sensores** IoT | repo **wifi_dpsk** (V4.3 binario + central + satélites ESPHome, línea activa) — antecedente **wifi_PIR** — NO empezar de cero |
 | **Android / Tasker / ADB** | **Tasker_mcp** (ya existe) + **android_agent_bridge** |
 | **Cloud storage** por LLM / MCP | **9Drive_mcp** (propio, avanzado) + rclone-mcp (Kiro CLI) |
 | **Construir un MCP** | ver buenas prácticas abajo + repo **Varios_tools/construir-mcp** |
@@ -59,7 +59,7 @@ verdad viva está en el repo `github.com/ydiaz1699/repo-index`; esta es su versi
 tool_catalog + construir-mcp + kiro-cli-nas), `repo-index` (este índice), `DebMenux-`.
 **MCPs propios:** `9Drive_mcp` (cloud storage GDrive+S3, avanzado), `Tasker_mcp` (incipiente).
 **Android:** `android_agent_bridge` (ADB agent-first), `Flujo_android`, `pyt-androidtv`, `tvbox-controller`.
-**IoT/domótica:** `alexa_y_n8n` (Alexa↔n8n↔Node-RED↔HA), `wifi_PIR` (alarma PIR), `ESPHome_ESP-NOW`,
+**IoT/domótica:** `alexa_y_n8n` (Alexa↔n8n↔Node-RED↔HA), `wifi_dpsk` (alarma IoT V4.3, línea activa) + `wifi_PIR` (antecedente), `ESPHome_ESP-NOW`,
 `control_DIY`, `code_RF_procc`.
 **Keyless PKE:** `pke-keyless-esp32`, `pke-keyless-android`, `pke-keyless-pcb`.
 **Contexto IA:** `Context_Engineering_V2` (AI-OS), `vsCode-AI`, `analisis_de_codigo`.

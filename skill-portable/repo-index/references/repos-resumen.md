@@ -26,8 +26,12 @@ Estados: 🟢 activo · 🔧 desarrollo · 🌱 incipiente/local · 📦 archivo
 ## IoT / domótica
 - **alexa_y_n8n** 🔧 — Alexa ↔ n8n ↔ Node-RED ↔ Home Assistant bidireccional (Custom Skill + AWS
   Lambda; alertas proactivas vía VoiceMonkey). Relevante al usar n8n.
-- **wifi_PIR** 🟢 — Alarma/sensores IoT ESP8266 por WiFi/UDP (puerto 4210) + MQTT a HA. V3.5.1
-  producción (texto), V4.3 desarrollo (binario, CRC16/HMAC). ⚠️ Si piden "alarma con PIR", partir de aquí.
+- **wifi_dpsk** 🔧 — Alarma IoT ESP8266, línea **V4.3 activa**: IoTProtocol binario (BOOT_ID+SEQ,
+  CRC16, HMAC opcional) en `lib/`, central C++ MQTT/HTTP (`POST /event` de respaldo, allowlist de
+  bocina), y satélites ESPHome con failover MQTT→HTTP (patrón `packages:` + `common/`). ⚠️ Si piden
+  "alarma con PIR", este es el repo activo.
+- **wifi_PIR** 🟢 — Antecedente de wifi_dpsk: alarma/sensores IoT ESP8266 WiFi/UDP (puerto 4210) +
+  MQTT a HA. V3.5.1 producción (texto). La línea V4.3 ya evolucionó a `wifi_dpsk`.
 - **ESPHome_ESP-NOW** 📦 — Plantillas base ESPHome + ESP-NOW (biblioteca reutilizable, no proyectos).
 - **control_DIY** 🌱 · **code_RF_procc** 🌱 (procesamiento RF).
 

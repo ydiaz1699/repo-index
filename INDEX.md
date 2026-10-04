@@ -40,6 +40,7 @@ enlaza a `repos/<repo>.md` cuando existe (leer eso antes que clonar el repo).
 |------|------|--------|-----------|
 | [alexa_y_n8n](https://github.com/ydiaz1699/alexa_y_n8n) | Alexa ↔ n8n ↔ Node-RED ↔ Home Assistant bidireccional (Custom Skill + AWS Lambda) | 🔧 | [repos/alexa-y-n8n.md](repos/alexa-y-n8n.md) |
 | [wifi_PIR](https://github.com/ydiaz1699/wifi_PIR) | Alarma/sensores IoT ESP8266 por WiFi/UDP (PIR), receptor central + MQTT a HA | 🟢 | [repos/wifi-pir.md](repos/wifi-pir.md) |
+| [wifi_dpsk](https://github.com/ydiaz1699/wifi_dpsk) | Alarma IoT ESP8266: IoTProtocol V4.3 binario + central MQTT/HTTP + satélites ESPHome con failover (evolución de wifi_PIR) | 🔧 | [repos/wifi-dpsk.md](repos/wifi-dpsk.md) |
 | [ESPHome_ESP-NOW](https://github.com/ydiaz1699/ESPHome_ESP-NOW) | Plantillas base ESPHome + ESP-NOW (biblioteca reutilizable) | 📦 | — |
 | [control_DIY](https://github.com/ydiaz1699/control_DIY) | Control DIY (C++/embebido) | 🌱 | — |
 | [code_RF_procc](https://github.com/ydiaz1699/code_RF_procc) | Procesamiento RF (C++) | 🌱 | — |
@@ -81,7 +82,7 @@ enlaza a `repos/<repo>.md` cuando existe (leer eso antes que clonar el repo).
 ## Conexiones útiles (para recomendaciones proactivas)
 
 - **n8n / automatización** → `alexa_y_n8n` (Alexa↔n8n↔Node-RED↔HA) + MCP n8n-mcp (en `mcp-catalog/`).
-- **Alarma / PIR / sensores** → `wifi_PIR` (ESP8266 UDP + MQTT a HA).
+- **Alarma / PIR / sensores** → `wifi_dpsk` (línea V4.3 activa: IoTProtocol binario + central + satélites ESPHome con failover MQTT→HTTP). Antecedente: `wifi_PIR` (UDP texto V3.5).
 - **Android / Tasker / ADB** → `Tasker_mcp` + `android_agent_bridge` + `Flujo_android`.
 - **Cloud storage / MCP** → `9Drive_mcp` (patrón multi-MCP con Prisma) + rclone-mcp (Kiro CLI).
 - **Contexto/skills para IA** → `Context_Engineering_V2` + patrón Prowler (en `mcp-catalog/`).
