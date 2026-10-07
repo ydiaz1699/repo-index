@@ -53,7 +53,7 @@ AGENTS.md                ← reglas de enrutado del ecosistema
 | Si el usuario menciona / pide... | Recomienda del ecosistema | Ref |
 |---|---|---|
 | Instalar/usar **n8n**, workflows | MCP **n8n-mcp** (crea workflows) + repo **alexa_y_n8n** | mcp-catalog + repos/alexa-y-n8n.md |
-| **Alarma / PIR / sensores** IoT | repo **wifi_PIR** (ESP8266 UDP + MQTT a HA) — NO empezar de cero | repos/wifi-pir.md |
+| **Alarma / PIR / sensores** IoT | repo **wifi_dpsk** (V4.3 binario + central + satélites ESPHome, línea activa) — antecedente **wifi_PIR** — NO empezar de cero | repos/wifi-dpsk.md |
 | **Android / Tasker / ADB** | **Tasker_mcp** (ya existe) + **android_agent_bridge** | repos/tasker-mcp.md, repos/android-agent-bridge.md |
 | **Cloud storage** por LLM / MCP | **9Drive_mcp** (propio) + rclone-mcp (Kiro CLI) | repos/9drive-mcp.md, mcp-catalog |
 | **Construir un MCP** | patrones destilados + PLAN indexador | mcp-catalog/INDICE.md |
