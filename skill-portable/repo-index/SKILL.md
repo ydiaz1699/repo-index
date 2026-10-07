@@ -29,6 +29,10 @@ verdad viva está en el repo `github.com/ydiaz1699/repo-index`; esta es su versi
 
 ## Reglas (aplicar al activar la skill)
 
+0. **Al inicio, antes de producir o pedir datos:** si vas a trabajar sobre un repo del
+   ecosistema y puedes clonarlo desde GitHub, hazlo y lee su doc interna ANTES de actuar.
+   No pidas por SSH lo que puedes leer tú desde GitHub. Distingue: código del repo = GitHub
+   (lo lees tú); estado runtime del NAS = solo el usuario por SSH (sin acceso a su LAN).
 1. **Antes de crear un repo/proyecto:** revisa la tabla de abajo. Si ya existe uno con ese
    nombre o propósito → avísalo y ofrece continuarlo, NO crees un duplicado.
 2. **Antes de recomendar herramienta/MCP/patrón:** revisa la tabla y recomienda lo del ecosistema.
@@ -49,9 +53,11 @@ verdad viva está en el repo `github.com/ydiaz1699/repo-index`; esta es su versi
 | Proyecto **"legible por IA"** / scaffolding | **Context_Engineering_V2** |
 | **Keyless / PKE** | trío **pke-keyless-{esp32,android,pcb}** |
 | **Montaje USB** en Linux | **USB-AutoMount-Linux** (udev) |
+| **Crear/modificar un servicio Docker del NAS** | Clonar `github.com/ydiaz1699/nas-dotfiles` y leer su **Paso 0** (AGENTS.md + docs/framework-audit.md + agent/catalog/_compose_base.md + docs/docker-entorno.md) ANTES de generar nada; NUNCA dar un compose genérico |
 
 > Ej.: "crea un repo Tasker MCP" → "ya tienes `ydiaz1699/Tasker_mcp`; ¿lo continuamos?"
 > Ej.: "instala n8n" → instala + "te recomiendo el n8n-mcp para crear workflows".
+> Ej.: "créame un servicio Docker X" → clonar nas-dotfiles + leer Paso 0 + compose con el patrón del repo (NO genérico).
 
 ## Índice de repos (resumen destilado — ver `references/repos-resumen.md` para el detalle)
 

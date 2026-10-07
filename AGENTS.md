@@ -5,6 +5,13 @@ Este repo es el **índice maestro**: consúltalo ANTES de actuar.
 
 ## Reglas obligatorias
 
+0. **Al INICIO de la sesión y ANTES de generar código o pedir datos al usuario:** activa esta
+   skill `repo-index`. Si vas a trabajar sobre un repo concreto del ecosistema y NO está
+   cargado en la sesión, **clónalo desde GitHub** (`git clone https://github.com/ydiaz1699/<repo>.git`)
+   y lee su doc interna (AGENTS.md, Paso 0) ANTES de actuar. No pidas por SSH (`cat`/`type`/`sed`)
+   lo que puedes leer tú desde GitHub. Distingue: **código del repo = GitHub (lo lees tú)**;
+   **estado runtime del NAS = solo el usuario por SSH** (sin acceso a su LAN).
+
 1. **ANTES de crear un repo nuevo**, consulta `INDEX.md`. Si ya existe uno con ese
    nombre o propósito, **avísalo y ofrece continuarlo** en vez de crear un duplicado.
    > Ej.: "¿Creamos un repo Tasker?" → "Ya tienes `ydiaz1699/Tasker_mcp`; ¿lo continuamos?"
@@ -36,6 +43,12 @@ Este repo es el **índice maestro**: consúltalo ANTES de actuar.
 | Construir un MCP | `mcp-catalog/INDICE.md` | Aplicar los patrones/buenas prácticas ya destilados |
 | Mejorar skills/contexto de agentes | `mcp-catalog/INDICE.md` (Prowler, Context_Engineering) | Recomendar el patrón catalogado |
 | Crear/ordenar un repo, hacer un mirror/fork, abrir a colaboradores | `Varios_tools/artefactos_proyecto/` (catálogo de archivos-artefacto: UPSTREAM.md, CONTRIBUTING.md, .env.example, CHANGELOG.md, ADR, SECURITY.md) | Añadir los artefactos que apliquen usando sus plantillas |
+| **Crear/modificar un servicio Docker del NAS** (compose, volúmenes, redes, arranque) | **Clonar `nas-dotfiles`** y leer su **Paso 0**: `AGENTS.md` + `docs/framework-audit.md` + `agent/catalog/_compose_base.md` + `docs/docker-entorno.md` (+ `docs/services/<svc>-guide.md` si existe) | Generar el compose siguiendo el patrón del repo (`extends ../_common.yml`, `env_file: [../.env, .env]`, labels `${SERVER_IP}`, registrar en `layers.conf`). NUNCA entregar un compose genérico |
+
+> **Operación interna / estado vivo del NAS** (docker ps, logs, salud, reiniciar un
+> contenedor en `192.168.1.200`) **no es accesible** desde Kiro Web (sin ruta a la LAN
+> privada): esos comandos los ejecuta el usuario por SSH. El **código** de cualquier repo
+> SÍ es accesible por GitHub (`git clone`/`gh api`) → léelo tú, no lo pidas por SSH.
 
 ## Repos ancla del ecosistema (fuentes de verdad, NO duplicar aquí)
 

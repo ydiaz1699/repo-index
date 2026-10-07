@@ -40,6 +40,10 @@ AGENTS.md                ← reglas de enrutado del ecosistema
 
 ## Reglas de activación (qué hacer al cargar la skill)
 
+0. **Al inicio, antes de producir o pedir datos:** si vas a trabajar sobre un repo del
+   ecosistema y NO está cargado en la sesión, **clónalo desde GitHub** y lee su doc interna
+   ANTES de actuar. No pidas por SSH lo que puedes leer tú desde GitHub. Distingue: código del
+   repo = GitHub (lo lees tú); estado runtime del NAS = solo el usuario por SSH (sin LAN).
 1. **Antes de crear un repo/proyecto:** consultar `INDEX.md`. Si ya existe uno con ese
    nombre o propósito → avisar y ofrecer continuarlo, NO crear duplicado.
 2. **Antes de recomendar herramienta/MCP/patrón:** consultar `INDEX.md` + `mcp-catalog/INDICE.md`
@@ -61,9 +65,11 @@ AGENTS.md                ← reglas de enrutado del ecosistema
 | Proyecto **"legible por IA"** / scaffolding | **Context_Engineering_V2** | repos/context-engineering-v2.md |
 | **Keyless / PKE** | trío **pke-keyless-{esp32,android,pcb}** | INDEX.md |
 | **Montaje USB** en Linux | **USB-AutoMount-Linux** (udev) | INDEX.md |
+| **Crear/modificar un servicio Docker del NAS** | Clonar **nas-dotfiles** y leer su **Paso 0** antes de generar nada; NUNCA dar un compose genérico | nas-dotfiles: AGENTS.md + docs/framework-audit.md + agent/catalog/_compose_base.md |
 
 > Ej.: "crea un repo Tasker MCP" → "ya tienes `ydiaz1699/Tasker_mcp`; ¿lo continuamos?"
 > Ej.: "ayúdame a instalar n8n" → instala + "te recomiendo montar el n8n-mcp para crear workflows".
+> Ej.: "créame un servicio Docker X" → clonar nas-dotfiles + leer Paso 0 + compose con el patrón del repo (NO genérico).
 
 ## Auto-mantenimiento
 
