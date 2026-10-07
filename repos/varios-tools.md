@@ -14,6 +14,10 @@ en la raíz salvo `.kiro/steering/` y README). Contiene los catálogos y guías 
 - `tool_catalog/` — catálogo de RECURSOS EXTERNOS (repos, videos, dotfiles) con fichas ligeras
   (frontmatter + "cuándo SÍ/NO aplica") para decidir si vale la pena leer la fuente. `index.md`
   + `catalog.json` + `entries/<slug>.md`.
+- `artefactos_proyecto/` — catálogo de ARCHIVOS-ARTEFACTO estándar de un proyecto
+  (UPSTREAM.md, CONTRIBUTING.md, .env.example, CHANGELOG.md, ADR/ideas-decisions.md,
+  SECURITY.md): ficha "cuándo SÍ/NO aplica" + plantilla lista en `templates/`. Para no
+  OLVIDAR qué archivo añadir al crear/ordenar/mirror un proyecto. Trae skill de auto-invoke.
 - `construir-mcp/` — guías para construir MCPs propios: `PROYECTO-guia-construir-mcp.md`
   (anatomía general, patrón 2 capas) + `PLAN-mcp-indexador-nodos.md` (MCP indexador tipo n8n-mcp).
 - `kiro-cli-nas/` — cómo montar Kiro CLI en el NAS + MCPs (rclone, nextdns, n8n) verificados.
